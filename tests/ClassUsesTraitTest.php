@@ -1,11 +1,11 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Tests;
+namespace violetshih\MongoQueueMonitor\Tests;
 
-use sbourdette\MongoQueueMonitor\Services\ClassUses;
-use sbourdette\MongoQueueMonitor\Tests\Support\MonitoredExtendingJob;
-use sbourdette\MongoQueueMonitor\Tests\Support\MonitoredJob;
-use sbourdette\MongoQueueMonitor\Traits\IsMonitored;
+use violetshih\MongoQueueMonitor\Services\ClassUses;
+use violetshih\MongoQueueMonitor\Tests\Support\MonitoredExtendingJob;
+use violetshih\MongoQueueMonitor\Tests\Support\MonitoredJob;
+use violetshih\MongoQueueMonitor\Traits\IsMonitored;
 
 class ClassUsesTraitTest extends TestCase
 {

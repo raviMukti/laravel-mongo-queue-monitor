@@ -1,11 +1,11 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Controllers;
+namespace violetshih\MongoQueueMonitor\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
-use sbourdette\MongoQueueMonitor\Models\MongoMonitorQueueModel;
+use violetshih\MongoQueueMonitor\Models\MongoMonitorQueueModel;
 
 class DeleteMonitorController
 {

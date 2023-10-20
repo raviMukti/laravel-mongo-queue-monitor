@@ -1,6 +1,6 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Providers;
+namespace violetshih\MongoQueueMonitor\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Queue\Events\JobQueued;
@@ -12,10 +12,10 @@ use Illuminate\Queue\QueueManager;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
-use sbourdette\MongoQueueMonitor\Routes\MongoQueueMonitorRoutes;
-use sbourdette\MongoQueueMonitor\Services\QueueMonitor;
+use violetshih\MongoQueueMonitor\Routes\MongoQueueMonitorRoutes;
+use violetshih\MongoQueueMonitor\Services\QueueMonitor;
 
-use sbourdette\MongoQueueMonitor\Providers\MongoQueueMonitorComponentsProvider;
+use violetshih\MongoQueueMonitor\Providers\MongoQueueMonitorComponentsProvider;
 
 class MongoQueueMonitorProvider extends ServiceProvider
 {
@@ -80,7 +80,7 @@ class MongoQueueMonitorProvider extends ServiceProvider
     public function register()
     {
 				//Register Blade X Components
-				$this->app->register('sbourdette\MongoQueueMonitor\Providers\MongoQueueMonitorComponentsProvider');
+				$this->app->register('violetshih\MongoQueueMonitor\Providers\MongoQueueMonitorComponentsProvider');
 
 				if ( ! $this->app->configurationIsCached()) {
             $this->mergeConfigFrom(

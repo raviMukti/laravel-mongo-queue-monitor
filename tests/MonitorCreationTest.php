@@ -1,15 +1,15 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Tests;
+namespace violetshih\MongoQueueMonitor\Tests;
 
-use sbourdette\MongoQueueMonitor\Models\Monitor;
-use sbourdette\MongoQueueMonitor\Tests\Support\MonitoredBroadcastingJob;
-use sbourdette\MongoQueueMonitor\Tests\Support\MonitoredExtendingJob;
-use sbourdette\MongoQueueMonitor\Tests\Support\MonitoredJob;
-use sbourdette\MongoQueueMonitor\Tests\Support\MonitoredJobWithArguments;
-use sbourdette\MongoQueueMonitor\Tests\Support\MonitoredPartiallyKeptFailingJob;
-use sbourdette\MongoQueueMonitor\Tests\Support\MonitoredPartiallyKeptJob;
-use sbourdette\MongoQueueMonitor\Tests\Support\UnmonitoredJob;
+use violetshih\MongoQueueMonitor\Models\Monitor;
+use violetshih\MongoQueueMonitor\Tests\Support\MonitoredBroadcastingJob;
+use violetshih\MongoQueueMonitor\Tests\Support\MonitoredExtendingJob;
+use violetshih\MongoQueueMonitor\Tests\Support\MonitoredJob;
+use violetshih\MongoQueueMonitor\Tests\Support\MonitoredJobWithArguments;
+use violetshih\MongoQueueMonitor\Tests\Support\MonitoredPartiallyKeptFailingJob;
+use violetshih\MongoQueueMonitor\Tests\Support\MonitoredPartiallyKeptJob;
+use violetshih\MongoQueueMonitor\Tests\Support\UnmonitoredJob;
 
 class MonitorCreationTest extends TestCase
 {

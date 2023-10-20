@@ -1,12 +1,12 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Controllers;
+namespace violetshih\MongoQueueMonitor\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 
-use sbourdette\MongoQueueMonitor\Models\Contracts\MonitorContract;
-use sbourdette\MongoQueueMonitor\Services\QueueMonitor;
+use violetshih\MongoQueueMonitor\Models\Contracts\MonitorContract;
+use violetshih\MongoQueueMonitor\Services\QueueMonitor;
 
 class PurgeMonitorsController
 {

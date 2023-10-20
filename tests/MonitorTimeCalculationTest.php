@@ -1,10 +1,10 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Tests;
+namespace violetshih\MongoQueueMonitor\Tests;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
-use sbourdette\MongoQueueMonitor\Models\Monitor;
+use violetshih\MongoQueueMonitor\Models\Monitor;
 
 class MonitorTimeCalculationTest extends TestCase
 {

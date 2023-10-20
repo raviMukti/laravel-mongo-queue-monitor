@@ -26,7 +26,7 @@
  * THE SOFTWARE.
  */
 
-namespace sbourdette\MongoQueueMonitor\Services;
+namespace violetshih\MongoQueueMonitor\Services;
 
 class ClassUses
 {

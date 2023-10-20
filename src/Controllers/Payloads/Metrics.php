@@ -1,16 +1,16 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Controllers\Payloads;
+namespace violetshih\MongoQueueMonitor\Controllers\Payloads;
 
 final class Metrics
 {
     /**
-     * @var \sbourdette\MongoQueueMonitor\Controllers\Payloads\Metric[]
+     * @var \violetshih\MongoQueueMonitor\Controllers\Payloads\Metric[]
      */
     public $metrics = [];
 
     /**
-     * @return \sbourdette\MongoQueueMonitor\Controllers\Payloads\Metric[]
+     * @return \violetshih\MongoQueueMonitor\Controllers\Payloads\Metric[]
      */
     public function all(): array
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Tests\Support;
+namespace violetshih\MongoQueueMonitor\Tests\Support;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;

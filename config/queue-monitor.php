@@ -9,10 +9,10 @@ return [
     /*
      * Set the model used for monitoring.
      * If using a custom model, be sure to implement the
-     *   sbourdette\MongoQueueMonitor\Models\Contracts\MonitorContract
+     *   violetshih\MongoQueueMonitor\Models\Contracts\MonitorContract
      * interface or extend the base model.
      */
-    'model' => \sbourdette\MongoQueueMonitor\Models\MongoMonitorQueueModel::class,
+    'model' => \violetshih\MongoQueueMonitor\Models\MongoMonitorQueueModel::class,
 
     /*
      * The optional UI settings.

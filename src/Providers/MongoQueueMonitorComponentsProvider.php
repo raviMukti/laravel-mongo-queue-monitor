@@ -1,15 +1,15 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Providers;
+namespace violetshih\MongoQueueMonitor\Providers;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use sbourdette\MongoQueueMonitor\Components\MetricCard;
-use sbourdette\MongoQueueMonitor\Components\FiltersForm;
-use sbourdette\MongoQueueMonitor\Components\JobsList;
-use sbourdette\MongoQueueMonitor\Components\JobLine;
-use sbourdette\MongoQueueMonitor\Components\JobDeleteForm;
-use sbourdette\MongoQueueMonitor\Components\JobPurgeForm;
+use violetshih\MongoQueueMonitor\Components\MetricCard;
+use violetshih\MongoQueueMonitor\Components\FiltersForm;
+use violetshih\MongoQueueMonitor\Components\JobsList;
+use violetshih\MongoQueueMonitor\Components\JobLine;
+use violetshih\MongoQueueMonitor\Components\JobDeleteForm;
+use violetshih\MongoQueueMonitor\Components\JobPurgeForm;
 
 class MongoQueueMonitorComponentsProvider extends ServiceProvider
 {

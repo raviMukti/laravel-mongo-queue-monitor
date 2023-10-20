@@ -1,9 +1,9 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Tests\Support;
+namespace violetshih\MongoQueueMonitor\Tests\Support;
 
-use sbourdette\MongoQueueMonitor\Services\QueueMonitor;
-use sbourdette\MongoQueueMonitor\Traits\IsMonitored;
+use violetshih\MongoQueueMonitor\Services\QueueMonitor;
+use violetshih\MongoQueueMonitor\Traits\IsMonitored;
 
 class MonitoredFailingJobWithHugeExceptionMessage extends BaseJob
 {

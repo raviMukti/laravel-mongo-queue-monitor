@@ -1,10 +1,10 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Components;
+namespace violetshih\MongoQueueMonitor\Components;
 
 use Illuminate\View\Component;
 
-use sbourdette\MongoQueueMonitor\Controllers\Payloads\Metric;
+use violetshih\MongoQueueMonitor\Controllers\Payloads\Metric;
 
 class MetricCard extends Component
 {

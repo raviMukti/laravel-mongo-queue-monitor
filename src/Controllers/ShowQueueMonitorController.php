@@ -1,6 +1,6 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Controllers;
+namespace violetshih\MongoQueueMonitor\Controllers;
 
 use Carbon\Carbon;
 use MongoDB\BSON\UTCDateTime;
@@ -9,10 +9,10 @@ use MongoDB\Laravel\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
-use sbourdette\MongoQueueMonitor\Controllers\Payloads\Metric;
-use sbourdette\MongoQueueMonitor\Controllers\Payloads\Metrics;
-use sbourdette\MongoQueueMonitor\Models\Contracts\MonitorContract;
-use sbourdette\MongoQueueMonitor\Services\QueueMonitor;
+use violetshih\MongoQueueMonitor\Controllers\Payloads\Metric;
+use violetshih\MongoQueueMonitor\Controllers\Payloads\Metrics;
+use violetshih\MongoQueueMonitor\Models\Contracts\MonitorContract;
+use violetshih\MongoQueueMonitor\Services\QueueMonitor;
 
 use Illuminate\Support\Facades\View;
 

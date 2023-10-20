@@ -1,12 +1,12 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Tests;
+namespace violetshih\MongoQueueMonitor\Tests;
 
-use sbourdette\MongoQueueMonitor\Models\Monitor;
-use sbourdette\MongoQueueMonitor\Services\QueueMonitor;
-use sbourdette\MongoQueueMonitor\Tests\Support\IntentionallyFailedException;
-use sbourdette\MongoQueueMonitor\Tests\Support\MonitoredFailingJob;
-use sbourdette\MongoQueueMonitor\Tests\Support\MonitoredFailingJobWithHugeExceptionMessage;
+use violetshih\MongoQueueMonitor\Models\Monitor;
+use violetshih\MongoQueueMonitor\Services\QueueMonitor;
+use violetshih\MongoQueueMonitor\Tests\Support\IntentionallyFailedException;
+use violetshih\MongoQueueMonitor\Tests\Support\MonitoredFailingJob;
+use violetshih\MongoQueueMonitor\Tests\Support\MonitoredFailingJobWithHugeExceptionMessage;
 
 class MonitorStateHandlingTest extends TestCase
 {

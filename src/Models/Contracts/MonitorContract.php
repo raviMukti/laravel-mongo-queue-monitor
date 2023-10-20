@@ -1,9 +1,9 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Models\Contracts;
+namespace violetshih\MongoQueueMonitor\Models\Contracts;
 
 /**
- * @mixin \sbourdette\MongoQueueMonitor\Models\Monitor
+ * @mixin \violetshih\MongoQueueMonitor\Models\Monitor
  */
 interface MonitorContract
 {

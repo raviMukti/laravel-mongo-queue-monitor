@@ -1,14 +1,14 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Tests;
+namespace violetshih\MongoQueueMonitor\Tests;
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\DB;
 use InvalidArgumentException;
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use sbourdette\MongoQueueMonitor\Providers\QueueMonitorProvider;
-use sbourdette\MongoQueueMonitor\Services\QueueMonitor;
-use sbourdette\MongoQueueMonitor\Tests\Support\BaseJob;
+use violetshih\MongoQueueMonitor\Providers\QueueMonitorProvider;
+use violetshih\MongoQueueMonitor\Services\QueueMonitor;
+use violetshih\MongoQueueMonitor\Tests\Support\BaseJob;
 
 class TestCase extends BaseTestCase
 {

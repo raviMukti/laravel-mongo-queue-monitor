@@ -1,9 +1,9 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Traits;
+namespace violetshih\MongoQueueMonitor\Traits;
 
-use sbourdette\MongoQueueMonitor\Models\Contracts\MonitorContract;
-use sbourdette\MongoQueueMonitor\Services\QueueMonitor;
+use violetshih\MongoQueueMonitor\Models\Contracts\MonitorContract;
+use violetshih\MongoQueueMonitor\Services\QueueMonitor;
 
 /**
  * @mixin \Illuminate\Queue\InteractsWithQueue

@@ -1,6 +1,6 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Services;
+namespace violetshih\MongoQueueMonitor\Services;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Contracts\Queue\Job as JobContract;
@@ -10,8 +10,8 @@ use Illuminate\Queue\Events\JobFailed;
 use Illuminate\Queue\Events\JobProcessed;
 use Illuminate\Queue\Events\JobProcessing;
 use Illuminate\Support\Carbon;
-use sbourdette\MongoQueueMonitor\Models\Contracts\MonitorContract;
-use sbourdette\MongoQueueMonitor\Traits\IsMonitored;
+use violetshih\MongoQueueMonitor\Models\Contracts\MonitorContract;
+use violetshih\MongoQueueMonitor\Traits\IsMonitored;
 use Throwable;
 
 use Log;
@@ -31,7 +31,7 @@ class QueueMonitor
 		/**
 		 * Get the model used to store the monitoring data.
 		 *
-		 * @return \sbourdette\MongoQueueMonitor\Models\Contracts\MonitorContract
+		 * @return \violetshih\MongoQueueMonitor\Models\Contracts\MonitorContract
 		 */
 		public static function getModel(): MonitorContract
 		{
@@ -150,7 +150,7 @@ class QueueMonitor
 					]);
 				}
 				catch(Throwable $e) {
-							Log::error('sbourdette/MongoQueueMonitor - jobQueued - unable to create Monitor');
+							Log::error('violetshih/MongoQueueMonitor - jobQueued - unable to create Monitor');
 							Log::debug($e);
 					}
 
@@ -190,7 +190,7 @@ class QueueMonitor
 						$monitor->update($attributes);
 				}
 				catch(Throwable $e) {
-						Log::error('sbourdette/MongoQueueMonitor - jobStarted - unable to update Monitor : Monitor job id = ' . self::getJobId($job) . ' exists ? ');
+						Log::error('violetshih/MongoQueueMonitor - jobStarted - unable to update Monitor : Monitor job id = ' . self::getJobId($job) . ' exists ? ');
 						Log::debug($e);
 				}
 		}
@@ -252,7 +252,7 @@ class QueueMonitor
 					$monitor->update($attributes);
 				}
 				catch(Throwable $e) {
-					Log::error('sbourdette/MongoQueueMonitor - jobFinished - unable to update Monitor : Monitor job id = ' . self::getJobId($job) . ' exists ? ');
+					Log::error('violetshih/MongoQueueMonitor - jobFinished - unable to update Monitor : Monitor job id = ' . self::getJobId($job) . ' exists ? ');
 					Log::debug($e);
 				}
 		}

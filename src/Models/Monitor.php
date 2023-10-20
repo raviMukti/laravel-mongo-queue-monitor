@@ -1,6 +1,6 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Models;
+namespace violetshih\MongoQueueMonitor\Models;
 
 use Carbon\CarbonInterval;
 use Exception;
@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
-use sbourdette\MongoQueueMonitor\Models\Contracts\MonitorContract;
+use violetshih\MongoQueueMonitor\Models\Contracts\MonitorContract;
 use Throwable;
 
 /**

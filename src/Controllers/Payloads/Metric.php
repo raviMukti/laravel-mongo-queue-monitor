@@ -1,6 +1,6 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Controllers\Payloads;
+namespace violetshih\MongoQueueMonitor\Controllers\Payloads;
 
 final class Metric
 {

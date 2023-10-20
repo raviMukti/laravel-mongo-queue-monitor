@@ -1,8 +1,8 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Tests\Support;
+namespace violetshih\MongoQueueMonitor\Tests\Support;
 
-use sbourdette\MongoQueueMonitor\Traits\IsMonitored;
+use violetshih\MongoQueueMonitor\Traits\IsMonitored;
 
 class MonitoredJob extends BaseJob
 {

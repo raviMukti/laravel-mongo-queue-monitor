@@ -29,12 +29,12 @@
   },
   "autoload": {
     "psr-4": {
-      "sbourdette\\MongoQueueMonitor\\": "src"
+      "violetshih\\MongoQueueMonitor\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "sbourdette\\MongoQueueMonitor\\Tests\\": "tests"
+      "violetshih\\MongoQueueMonitor\\Tests\\": "tests"
     }
   },
   "scripts": {
@@ -43,7 +43,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "sbourdette\\MongoQueueMonitor\\Providers\\MongoQueueMonitorProvider"
+        "violetshih\\MongoQueueMonitor\\Providers\\MongoQueueMonitorProvider"
       ]
     }
   },

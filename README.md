@@ -18,7 +18,7 @@ This package require Jenssegers [laravel-mongodb](https://github.com/jenssegers/
 ## Installation
 
 ```
-composer require sbourdette/laravel-mongo-queue-monitor
+composer require violetshih/laravel-mongo-queue-monitor
 ```
 
 ## Configuration
@@ -26,7 +26,7 @@ composer require sbourdette/laravel-mongo-queue-monitor
 Copy configuration & migration to your project:
 
 ```
-php artisan vendor:publish --provider="sbourdette\MongoQueueMonitor\Providers\MongoQueueMonitorProvider"
+php artisan vendor:publish --provider="violetshih\MongoQueueMonitor\Providers\MongoQueueMonitorProvider"
 ```
 
 Migrate the Queue Monitoring table. The table name can be configured in the config file or via the published migration.
@@ -37,7 +37,7 @@ php artisan migrate
 
 ## Usage
 
-To monitor a job, simply add the `sbourdette\MongoQueueMonitor\Traits\IsMonitored` Trait.
+To monitor a job, simply add the `violetshih\MongoQueueMonitor\Traits\IsMonitored` Trait.
 
 ```php
 use Illuminate\Bus\Queueable;
@@ -45,7 +45,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-use sbourdette\MongoQueueMonitor\Traits\IsMonitored; // <---
+use violetshih\MongoQueueMonitor\Traits\IsMonitored; // <---
 
 class ExampleJob implements ShouldQueue
 {
@@ -75,9 +75,9 @@ Route::prefix('jobs')->group(function () {
 | ----- | ------------------- |
 | `/`   | Show the jobs table |
 
-See the [full configuration file](https://github.com/sbourdette/laravel-mongo-queue-monitor/blob/master/config/queue-monitor.php) for more information.
+See the [full configuration file](https://github.com/violetshih/laravel-mongo-queue-monitor/blob/master/config/queue-monitor.php) for more information.
 
-![Preview](https://raw.githubusercontent.com/sbourdette/laravel-mongo-queue-monitor/master/preview.png)
+![Preview](https://raw.githubusercontent.com/violetshih/laravel-mongo-queue-monitor/master/preview.png)
 
 
 ## Extended usage
@@ -88,7 +88,7 @@ You can set a **progress value** (0-100) to get an estimation of a job progressi
 
 ```php
 use Illuminate\Contracts\Queue\ShouldQueue;
-use sbourdette\MongoQueueMonitor\Traits\IsMonitored;
+use violetshih\MongoQueueMonitor\Traits\IsMonitored;
 
 class ExampleJob implements ShouldQueue
 {
@@ -118,7 +118,7 @@ This example job loops through a large amount of users and updates it's progress
 ```php
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Database\Eloquent\Collection;
-use sbourdette\MongoQueueMonitor\Traits\IsMonitored;
+use violetshih\MongoQueueMonitor\Traits\IsMonitored;
 
 class ChunkJob implements ShouldQueue
 {
@@ -149,7 +149,7 @@ To avoid flooding the database with rapidly repeating update queries, you can se
 
 ```php
 use Illuminate\Contracts\Queue\ShouldQueue;
-use sbourdette\MongoQueueMonitor\Traits\IsMonitored;
+use violetshih\MongoQueueMonitor\Traits\IsMonitored;
 
 class LazyJob implements ShouldQueue
 {
@@ -168,7 +168,7 @@ This package also allows setting custom data in array syntax on the monitoring m
 
 ```php
 use Illuminate\Contracts\Queue\ShouldQueue;
-use sbourdette\MongoQueueMonitor\Traits\IsMonitored;
+use violetshih\MongoQueueMonitor\Traits\IsMonitored;
 
 class CustomDataJob implements ShouldQueue
 {
@@ -204,7 +204,7 @@ You can override the `keepMonitorOnSuccess()` method to only store failed monito
 
 ```php
 use Illuminate\Contracts\Queue\ShouldQueue;
-use sbourdette\MongoQueueMonitor\Traits\IsMonitored;
+use violetshih\MongoQueueMonitor\Traits\IsMonitored;
 
 class FrequentSucceedingJob implements ShouldQueue
 {
@@ -220,7 +220,7 @@ class FrequentSucceedingJob implements ShouldQueue
 ### Retrieve processed Jobs
 
 ```php
-use sbourdette\MongoQueueMonitor\Models\Monitor;
+use violetshih\MongoQueueMonitor\Models\Monitor;
 
 $job = Monitor::query()->first();
 
@@ -248,7 +248,7 @@ $job->getBasename();
 ### Model Scopes
 
 ```php
-use sbourdette\MongoQueueMonitor\Models\Monitor;
+use violetshih\MongoQueueMonitor\Models\Monitor;
 
 // Filter by Status
 Monitor::failed();

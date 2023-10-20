@@ -1,6 +1,6 @@
 <?php
 
-namespace sbourdette\MongoQueueMonitor\Components;
+namespace violetshih\MongoQueueMonitor\Components;
 
 use Illuminate\View\Component;
 
