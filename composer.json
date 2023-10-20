@@ -15,7 +15,7 @@
     "ext-mbstring": "*",
     "jenssegers/mongodb": "^4.0",
     "mongodb/laravel-mongodb": "^4.0",
-    "illuminate/database": "^7.30.3|^8.22.1|^9.0",
+    "illuminate/database": "^7.30.3|^8.22.1|^9.0|^10.0",
     "illuminate/queue": "^7.30.3|^8.22.1|^9.0",
     "illuminate/support": "^7.30.3|^8.22.1|^9.0",
     "nesbot/carbon": "^2.0"
