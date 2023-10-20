@@ -1,13 +1,12 @@
 {
-  "name": "sbourdette/laravel-mongo-queue-monitor",
+  "name": "violetshih/laravel-mongo-queue-monitor",
   "description": "Queue Monitoring for Laravel MongoDb Job Queue",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "sylvain@bourdette.com",
-      "email": "sylvain@bourdette.com",
-      "homepage": "https://www.bourdette.com"
+      "name": "violetshih",
+      "email": "swam1991@gmail.com"
     }
   ],
   "require": {
