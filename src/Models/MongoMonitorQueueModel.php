@@ -4,8 +4,7 @@ namespace violetshih\MongoQueueMonitor\Models;
 
 use Carbon\CarbonInterval;
 use Exception;
-use MongoDB\Laravel\Eloquent\Model as MongoModel;
-use MongoDB\Laravel\Eloquent\Builder as MongoBuilder;
+use MongoDB\Laravel\Eloquent\Model;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Carbon;
