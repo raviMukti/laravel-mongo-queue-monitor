@@ -63,7 +63,7 @@ class ShowQueueMonitorController
             ->when($filters['custom_data_key'] && $filters['custom_data_value'], static function (Builder $builder) use ($filters) {
                 $customDataKey = $filters['custom_data_key'];
                 $customDataValue = $filters['custom_data_value'];
-                $builder->where('data', 'regexp', sprintf('"%s":\s*"%s"', $customDataKey, $customDataValue));
+                $builder->where('data', 'regexp', sprintf('/"%s":\s*"%s"/', $customDataKey, $customDataValue));
             })
             ->ordered()
             ->paginate(
