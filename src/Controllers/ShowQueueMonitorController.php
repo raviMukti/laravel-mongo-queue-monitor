@@ -60,7 +60,9 @@ class ShowQueueMonitorController
             ->when(($queue = $filters['queue']) && 'all' !== $queue, static function (Builder $builder) use ($queue) {
                 $builder->where('queue', $queue);
             })
-            ->when(($customDataKey = $filters['custom_data_key']) && ($customDataValue = $filters['custom_data_value']), static function (Builder $builder) use ($customDataKey, $customDataValue) {
+            ->when($filters['custom_data_key'] && $filters['custom_data_value'], static function (Builder $builder) use ($filters) {
+                $customDataKey = $filters['custom_data_key'];
+                $customDataValue = $filters['custom_data_value'];
                 $builder->where('data', 'regexp', sprintf('"%s":\s*"%s"', $customDataKey, $customDataValue));
             })
             ->ordered()
