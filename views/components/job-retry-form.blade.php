@@ -1,6 +1,6 @@
 <form action="{{ route('queue-monitor::retry', ['monitor' => $job->job_id, 'viewname' => $viewname]) }}" method="POST" class="inline">
     @csrf
-    @method('PATCH')
+    @method('POST')
     <button type="submit" 
             class="inline-flex items-center px-3 py-1 border border-transparent text-xs font-medium rounded text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             onclick="return confirm('Are you sure you want to retry this job?')">
