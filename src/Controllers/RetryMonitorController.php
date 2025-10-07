@@ -53,21 +53,8 @@ class RetryMonitorController
             // Get the job class name
             $jobClass = $monitor->name;
             
-            // Try to unserialize the original command data if it exists
-            if (isset($jobData['command']) && is_string($jobData['command'])) {
-                $unserializedData = unserialize($jobData['command']);
-                
-                if ($unserializedData instanceof $jobClass) {
-                    // If we can unserialize the original command, use it directly
-                    $job = $unserializedData;
-                } else {
-                    // If unserialization fails, create a new job with the data array
-                    $job = new $jobClass($jobData);
-                }
-            } else {
-                // Fallback to creating job with data array
-                $job = new $jobClass($jobData);
-            }
+            // Create the job instance with the original data
+            $job = new $jobClass($jobData);
             
             // Set the queue name
             if ($monitor->queue) {
