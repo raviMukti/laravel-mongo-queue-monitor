@@ -1,4 +1,4 @@
-<form action="{{ route('queue-monitor::retry', ['monitor' => $job->job_id, 'viewname' => $viewname]) }}" method="POST" class="inline">
+<form action="{{ route('queue-monitor::retry', ['monitor' => $job, 'viewname' => $viewname]) }}" method="POST" class="inline">
     @csrf
     @method('POST')
     <button type="submit" 
